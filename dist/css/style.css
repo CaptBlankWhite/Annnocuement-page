@@ -10,8 +10,12 @@ html {
 }
 
 body {
+  background-color: #f5f7fa;
   margin: 0;
   padding: 0;
+  font-family: "Hind Guntur", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
 }
 
 a,
@@ -19,6 +23,7 @@ a:visited,
 a:hover {
   display: block;
   text-decoration: none;
+  width: max-content;
 }
 
 ul {
@@ -30,8 +35,18 @@ img {
   max-width: 100%;
 }
 
+@media (min-width: 40em) {
+  .card {
+    max-width: 71.25rem;
+    margin: 0 auto;
+  }
+}
 .card > ul {
+  margin: 0;
   padding: 0;
+}
+.card > ul > li {
+  background-color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
