@@ -76,5 +76,8 @@ img {
   font-size: 1.125rem;
   font-weight: 700;
 }
+.card .media > img {
+  border-radius: 1.375rem;
+}
 
 /*# sourceMappingURL=style.css.map */
