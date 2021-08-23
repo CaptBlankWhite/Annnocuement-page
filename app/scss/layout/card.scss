@@ -1,7 +1,17 @@
 @use '../abstract/'as *;
 
 .card {
+  @include breakpoint-up(medium) {
+    max-width: rem(1140);
+    margin: 0 auto;
+  }
+
   >ul {
+    margin: 0;
     padding: 0;
+
+    >li {
+      background-color: #fff;
+    }
   }
 }
