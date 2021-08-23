@@ -7,12 +7,41 @@
   }
 
   >ul {
-    margin: 0;
+    margin: rem(48);
     padding: 0;
+
+    @include breakpoint-up(medium) {
+      column-count: 2;
+      column-gap: rem(18);
+    }
+
+    @include breakpoint-up(large) {
+      column-count: 3;
+    }
 
     >li {
       background-color: #fff;
+      border-radius: rem(10);
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+        rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+      margin-bottom: rem(18);
       padding: rem(36) rem(24);
+
+      -webkit-column-break-inside: avoid;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+  }
+
+  .user {
+    display: flex;
+    align-items: center;
+
+    >div>a>div>span {
+      >span {
+        display: block;
+        @include font-face(default, rem(18), 700);
+      }
     }
   }
 }
