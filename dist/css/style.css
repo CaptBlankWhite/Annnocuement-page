@@ -42,12 +42,39 @@ img {
   }
 }
 .card > ul {
-  margin: 0;
+  margin: 3rem;
   padding: 0;
+}
+@media (min-width: 40em) {
+  .card > ul {
+    column-count: 2;
+    column-gap: 1.125rem;
+  }
+}
+@media (min-width: 64em) {
+  .card > ul {
+    column-count: 3;
+  }
 }
 .card > ul > li {
   background-color: #fff;
+  border-radius: 0.625rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  margin-bottom: 1.125rem;
   padding: 2.25rem 1.5rem;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+.card .user {
+  display: flex;
+  align-items: center;
+}
+.card .user > div > a > div > span > span {
+  display: block;
+  font-family: "Hind Guntur", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */
