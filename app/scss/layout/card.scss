@@ -1,0 +1,7 @@
+@use '../abstract/'as *;
+
+.card {
+  >ul {
+    padding: 0;
+  }
+}
