@@ -44,4 +44,10 @@
       }
     }
   }
+
+  .media {
+    >img {
+      border-radius: rem(22);
+    }
+  }
 }
