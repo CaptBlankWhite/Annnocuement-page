@@ -26,6 +26,30 @@ $breakpoints-down: ("small": "39.9375em",
 
 
 
+// ---------- FONT-FACE MIXINS ---------- //
+
+@mixin font-face($type: 'default',
+  $size,
+  $weight,
+  $color: null) {
+  @if $type=='heading' {
+    font-family: 'Oswald', sans-serif;
+  }
+
+  @if $type=='default' {
+    font-family: 'Hind Guntur', sans-serif;
+  }
+
+  @if $color !='' {
+    color: #{$color};
+  }
+
+  font-size: #{$size};
+  font-weight: $weight;
+}
+
+
+
 // ---------- OFFSET POSITIONING MIXINS ---------- //
 
 @mixin position ($position,
