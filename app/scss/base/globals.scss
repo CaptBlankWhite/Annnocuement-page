@@ -15,7 +15,7 @@ body {
   background-color: #f5f7fa;
   margin: 0;
   padding: 0;
-  @include font-face(default, rem(14), 400);
+  @include font-face(arial, rem(14), 400);
 }
 
 a,
