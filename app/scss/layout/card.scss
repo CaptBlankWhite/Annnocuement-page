@@ -7,7 +7,7 @@
   }
 
   >ul {
-    margin: rem(48);
+    margin: rem(24);
     padding: 0;
 
     @include breakpoint-up(medium) {
@@ -38,6 +38,10 @@
     display: flex;
     align-items: center;
 
+    >a>img {
+      width: rem(46);
+    }
+
     >div>a>div {
       margin-left: rem(16);
 
@@ -46,7 +50,7 @@
 
         >span {
           display: block;
-          @include font-face(arial, rem(18), 700);
+          @include font-face(arial, rem(16), 700);
           @include position(relative);
 
           &:hover {
@@ -55,7 +59,7 @@
             &::before {
               @include position(absolute, $content: '', $bottom: 0, $left: 0);
               background-color: #A71F23;
-              height: rem(3);
+              height: rem(2);
               width: 100%;
             }
           }
