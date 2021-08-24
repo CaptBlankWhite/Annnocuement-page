@@ -1,0 +1,71 @@
+// ---------- MEDIA QUERY MIXINS ---------- //
+
+@mixin breakpoint-up($size) {
+  @media (min-width:map-get($breakpoints-up, $size)) {
+    @content;
+  }
+}
+
+@mixin breakpoint-down($size) {
+  @media (max-width:map-get($breakpoints-down, $size)) {
+    @content;
+  }
+}
+
+// 640px, 1024px, 1400px
+$breakpoints-up: ("medium": "40em",
+  "large": "64em",
+  "xlarge": "87.5em"
+);
+
+// 639px, 1023px, 1399px
+$breakpoints-down: ("small": "39.9375em",
+  "medium": "63.9375em",
+  "large": "87.4375em"
+);
+
+
+
+// ---------- FONT-FACE MIXINS ---------- //
+
+@mixin font-face($type: 'default',
+  $size,
+  $weight,
+  $color: null) {
+  @if $type=='heading' {
+    font-family: 'Oswald', sans-serif;
+  }
+
+  @if $type=='default' {
+    font-family: 'Hind Guntur', sans-serif;
+  }
+
+  @if $type=='arial' {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  @if $color !='' {
+    color: #{$color};
+  }
+
+  font-size: #{$size};
+  font-weight: $weight;
+}
+
+
+
+// ---------- OFFSET POSITIONING MIXINS ---------- //
+
+@mixin position ($position,
+  $content: null,
+  $top: null,
+  $right: null,
+  $bottom: null,
+  $left: null) {
+  position: $position;
+  content: $content;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}

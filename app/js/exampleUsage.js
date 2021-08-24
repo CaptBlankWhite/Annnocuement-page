@@ -72,10 +72,13 @@
  * NEW: These first examples no longer need the Widget ID to work.
  *************************************************************************/
 var configList = {
-  "list": {"listSlug": 'inspiration', "screenName": 'dlslsg_cite'},
+  "list": {
+    "listSlug": 'inspiration',
+    "screenName": 'dlslsg_cite'
+  },
   "domId": 'exampleList',
   "maxTweets": 5,
-  "enableLinks": true, 
+  "enableLinks": true,
   "showUser": true,
   "showTime": true,
   "showImages": true,
@@ -85,23 +88,28 @@ twitterFetcher.fetch(configList);
 
 
 var configProfile = {
-  "profile": {"screenName": 'dlslsg_cite'},
+  "profile": {
+    "screenName": 'dlslsg_cite'
+  },
   "domId": 'exampleProfile',
   "maxTweets": 20,
-  "enableLinks": true, 
+  "enableLinks": true,
   "showUser": true,
   "showTime": true,
   "showImages": true,
+  "showInteraction": false,
   "lang": 'en'
 };
 twitterFetcher.fetch(configProfile);
 
 
 var configLikes = {
-  "likes": {"screenName": 'dlslsg_cite'},
+  "likes": {
+    "screenName": 'dlslsg_cite'
+  },
   "domId": 'exampleLikes',
   "maxTweets": 3,
-  "enableLinks": true, 
+  "enableLinks": true,
   "showUser": true,
   "showTime": true,
   "showImages": true,
@@ -205,17 +213,17 @@ var config5 = {
   "showInteraction": false
 };
 
-function handleTweets(tweets){
-    var x = tweets.length;
-    var n = 0;
-    var element = document.getElementById('example5');
-    var html = '<ul>';
-    while(n < x) {
-      html += '<li>' + tweets[n] + '</li>';
-      n++;
-    }
-    html += '</ul>';
-    element.innerHTML = html;
+function handleTweets(tweets) {
+  var x = tweets.length;
+  var n = 0;
+  var element = document.getElementById('example5');
+  var html = '<ul>';
+  while (n < x) {
+    html += '<li>' + tweets[n] + '</li>';
+    n++;
+  }
+  html += '</ul>';
+  element.innerHTML = html;
 }
 
 twitterFetcher.fetch(config5);
@@ -297,17 +305,17 @@ var config8 = {
 
 twitterFetcher.fetch(config8);
 
-function populateTpl(tweets){
+function populateTpl(tweets) {
   var element = document.getElementById('example8');
   var html = '<ul>';
-  for (var i = 0, lgth = tweets.length; i < lgth ; i++) {
+  for (var i = 0, lgth = tweets.length; i < lgth; i++) {
     var tweetObject = tweets[i];
-    html += '<li>'
-      + (tweetObject.image ? '<div class="tweet-img"><img src="'+tweetObject.image+'" /></div>' : '')
-      + '<p class="tweet-content">' + tweetObject.tweet + '</p>'
-      + '<p class="tweet-infos">Posted on the ' + tweetObject.time + ', by ' + tweetObject.author + '</p>'
-      + '<p class="tweet-link"><a href="' + tweetObject.permalinkURL + '">Link</a></p>'
-    + '</li>';
+    html += '<li>' +
+      (tweetObject.image ? '<div class="tweet-img"><img src="' + tweetObject.image + '" /></div>' : '') +
+      '<p class="tweet-content">' + tweetObject.tweet + '</p>' +
+      '<p class="tweet-infos">Posted on the ' + tweetObject.time + ', by ' + tweetObject.author + '</p>' +
+      '<p class="tweet-link"><a href="' + tweetObject.permalinkURL + '">Link</a></p>' +
+      '</li>';
   }
   html += '</ul>';
   element.innerHTML = html;

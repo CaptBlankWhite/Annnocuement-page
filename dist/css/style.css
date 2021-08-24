@@ -1,0 +1,109 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+a,
+a:visited,
+a:hover {
+  display: block;
+  text-decoration: none;
+  width: max-content;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+@media (min-width: 40em) {
+  .card {
+    max-width: 71.25rem;
+    margin: 0 auto;
+  }
+}
+.card > ul {
+  margin: 3rem;
+  padding: 0;
+}
+@media (min-width: 40em) {
+  .card > ul {
+    column-count: 2;
+    column-gap: 1.125rem;
+  }
+}
+@media (min-width: 64em) {
+  .card > ul {
+    column-count: 3;
+  }
+}
+.card > ul > li {
+  background-color: #fff;
+  border-radius: 0.625rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  margin-bottom: 1.125rem;
+  padding: 2.25rem 1.5rem;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+.card .user {
+  display: flex;
+  align-items: center;
+}
+.card .user > div > a > div {
+  margin-left: 1rem;
+}
+.card .user > div > a > div > span {
+  color: #000;
+}
+.card .user > div > a > div > span > span {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  position: relative;
+}
+.card .user > div > a > div > span > span:hover {
+  color: #A71F23;
+}
+.card .user > div > a > div > span > span:hover::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  background-color: #A71F23;
+  height: 0.1875rem;
+  width: 100%;
+}
+.card .media > img {
+  border-radius: 1.125rem;
+  margin-bottom: 0.625rem;
+}
+.card a {
+  color: #000;
+}
+.card a:hover {
+  color: #A71F23;
+}
+
+/*# sourceMappingURL=style.css.map */
