@@ -42,7 +42,7 @@ img {
   }
 }
 .card > ul {
-  margin: 3rem;
+  margin: 1.5rem;
   padding: 0;
 }
 @media (min-width: 40em) {
@@ -70,6 +70,9 @@ img {
   display: flex;
   align-items: center;
 }
+.card .user > a > img {
+  width: 2.875rem;
+}
 .card .user > div > a > div {
   margin-left: 1rem;
 }
@@ -79,7 +82,7 @@ img {
 .card .user > div > a > div > span > span {
   display: block;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 700;
   position: relative;
 }
@@ -92,7 +95,7 @@ img {
   bottom: 0;
   left: 0;
   background-color: #A71F23;
-  height: 0.1875rem;
+  height: 0.125rem;
   width: 100%;
 }
 .card .media > img {
