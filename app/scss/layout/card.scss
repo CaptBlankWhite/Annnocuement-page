@@ -7,6 +7,7 @@
   }
 
   >ul {
+    margin: rem(16);
     padding: 0;
 
     >li {
@@ -39,7 +40,7 @@
 
         >span {
           display: block;
-          @include font-face(arial, rem(16), 700);
+          @include font-face(openSans, rem(18), 700);
           @include position(relative);
 
           &:hover {
@@ -57,11 +58,24 @@
     }
   }
 
+  .timePosted {
+    >a {
+      @include font-face(openSans, rem(14), 700);
+    }
+  }
+
   .media {
     &-wrapper {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
       grid-gap: rem(12);
+
+      @include breakpoint-up(medium) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include breakpoint-up(large) {
+        grid-template-columns: repeat(4, 1fr);
+      }
     }
 
     >img {
