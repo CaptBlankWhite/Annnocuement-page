@@ -13,7 +13,7 @@ body {
   background-color: #f5f7fa;
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #242424;
   font-size: 0.875rem;
   font-weight: 400;
@@ -43,6 +43,7 @@ img {
   }
 }
 .card > ul {
+  margin: 1rem;
   padding: 0;
 }
 .card > ul > li {
@@ -70,8 +71,8 @@ img {
 }
 .card .user > div > a > div > span > span {
   display: block;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.125rem;
   font-weight: 700;
   position: relative;
 }
@@ -87,10 +88,24 @@ img {
   height: 0.125rem;
   width: 100%;
 }
+.card .timePosted > a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
 .card .media-wrapper {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
   grid-gap: 0.75rem;
+}
+@media (min-width: 40em) {
+  .card .media-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 64em) {
+  .card .media-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 .card .media > img {
   border-radius: 1.125rem;
