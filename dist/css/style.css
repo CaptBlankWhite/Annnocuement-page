@@ -14,6 +14,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  color: #242424;
   font-size: 0.875rem;
   font-weight: 400;
 }
@@ -42,19 +43,7 @@ img {
   }
 }
 .card > ul {
-  margin: 1.5rem;
   padding: 0;
-}
-@media (min-width: 40em) {
-  .card > ul {
-    column-count: 2;
-    column-gap: 1.125rem;
-  }
-}
-@media (min-width: 64em) {
-  .card > ul {
-    column-count: 3;
-  }
 }
 .card > ul > li {
   background-color: #fff;
@@ -98,12 +87,17 @@ img {
   height: 0.125rem;
   width: 100%;
 }
+.card .media-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.75rem;
+}
 .card .media > img {
   border-radius: 1.125rem;
   margin-bottom: 0.625rem;
 }
 .card a {
-  color: #000;
+  color: #242424;
 }
 .card a:hover {
   color: #A71F23;
