@@ -13,7 +13,8 @@ body {
   background-color: #f5f7fa;
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
+  color: #242424;
   font-size: 0.875rem;
   font-weight: 400;
 }
@@ -42,19 +43,8 @@ img {
   }
 }
 .card > ul {
-  margin: 3rem;
+  margin: 1rem;
   padding: 0;
-}
-@media (min-width: 40em) {
-  .card > ul {
-    column-count: 2;
-    column-gap: 1.125rem;
-  }
-}
-@media (min-width: 64em) {
-  .card > ul {
-    column-count: 3;
-  }
 }
 .card > ul > li {
   background-color: #fff;
@@ -70,6 +60,9 @@ img {
   display: flex;
   align-items: center;
 }
+.card .user > a > img {
+  width: 2.875rem;
+}
 .card .user > div > a > div {
   margin-left: 1rem;
 }
@@ -78,7 +71,7 @@ img {
 }
 .card .user > div > a > div > span > span {
   display: block;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.125rem;
   font-weight: 700;
   position: relative;
@@ -92,15 +85,34 @@ img {
   bottom: 0;
   left: 0;
   background-color: #A71F23;
-  height: 0.1875rem;
+  height: 0.125rem;
   width: 100%;
+}
+.card .timePosted > a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.card .media-wrapper {
+  display: grid;
+  grid-gap: 0.75rem;
+}
+@media (min-width: 40em) {
+  .card .media-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 64em) {
+  .card .media-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 .card .media > img {
   border-radius: 1.125rem;
   margin-bottom: 0.625rem;
 }
 .card a {
-  color: #000;
+  color: #242424;
 }
 .card a:hover {
   color: #A71F23;

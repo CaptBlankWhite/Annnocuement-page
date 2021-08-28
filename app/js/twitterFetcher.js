@@ -384,10 +384,10 @@
             if (printTime) {
               if (permalinks) {
                 op += '<p class="timePosted"><a href="' + permalinksURL[n] +
-                  '">' + times[n].getAttribute('aria-label') + '</a></p>';
+                  '">' + times[n].getAttribute('aria-label') + '</a></p><div class="media-wrapper">';
               } else {
                 op += '<p class="timePosted">' +
-                  times[n].getAttribute('aria-label') + '</p>';
+                  times[n].getAttribute('aria-label') + '</p><div class="media-wrapper">';
               }
             }
           } else {
@@ -397,7 +397,7 @@
               }
               op += '<p class="tweet">' + tweets[n].textContent + '</p>';
               if (printTime) {
-                op += '<p class="timePosted">' + times[n].textContent + '</p>';
+                op += '<p class="timePosted">' + times[n].textContent + '</p><div class="media-wrapper">';
               }
 
             } else {
@@ -406,7 +406,7 @@
               }
               op += '<p class="tweet">' + tweets[n].textContent + '</p>';
               if (printTime) {
-                op += '<p class="timePosted">' + times[n].textContent + '</p>';
+                op += '<p class="timePosted">' + times[n].textContent + '</p><div class="media-wrapper">';
               }
             }
           }

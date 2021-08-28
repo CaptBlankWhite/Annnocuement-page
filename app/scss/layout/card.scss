@@ -7,17 +7,8 @@
   }
 
   >ul {
-    margin: rem(48);
+    margin: rem(16);
     padding: 0;
-
-    @include breakpoint-up(medium) {
-      column-count: 2;
-      column-gap: rem(18);
-    }
-
-    @include breakpoint-up(large) {
-      column-count: 3;
-    }
 
     >li {
       background-color: #fff;
@@ -30,13 +21,16 @@
       -webkit-column-break-inside: avoid;
       page-break-inside: avoid;
       break-inside: avoid;
-
     }
   }
 
   .user {
     display: flex;
     align-items: center;
+
+    >a>img {
+      width: rem(46);
+    }
 
     >div>a>div {
       margin-left: rem(16);
@@ -46,7 +40,7 @@
 
         >span {
           display: block;
-          @include font-face(arial, rem(18), 700);
+          @include font-face(openSans, rem(18), 700);
           @include position(relative);
 
           &:hover {
@@ -55,7 +49,7 @@
             &::before {
               @include position(absolute, $content: '', $bottom: 0, $left: 0);
               background-color: #A71F23;
-              height: rem(3);
+              height: rem(2);
               width: 100%;
             }
           }
@@ -64,7 +58,26 @@
     }
   }
 
+  .timePosted {
+    >a {
+      @include font-face(openSans, rem(14), 700);
+    }
+  }
+
   .media {
+    &-wrapper {
+      display: grid;
+      grid-gap: rem(12);
+
+      @include breakpoint-up(medium) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include breakpoint-up(large) {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
     >img {
       border-radius: rem(18);
       margin-bottom: rem(10);
@@ -72,7 +85,7 @@
   }
 
   a {
-    color: #000;
+    color: #242424;
 
     &:hover {
       color: #A71F23;
