@@ -426,7 +426,7 @@
             var extractedImages = extractImagesUrl(images[n]);
             for (var i = 0; i < extractedImages.length; i++) {
               op += '<div class="media">' +
-                '<img src="' + extractedImages[i] +
+                '<img class="image" src="' + extractedImages[i] +
                 '" loading="lazy" alt="Image from tweet" />' + '</div>';
             }
           }
