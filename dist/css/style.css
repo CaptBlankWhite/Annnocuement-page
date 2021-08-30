@@ -148,4 +148,48 @@ img {
   margin-bottom: 0.625rem;
 }
 
+.image {
+  cursor: pointer;
+  transition: opacity 150ms ease-in-out;
+}
+.image:hover {
+  opacity: 0.7;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: none;
+  height: 100%;
+  overflow: auto;
+  width: 100%;
+  z-index: 1;
+}
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 37.5rem;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.close {
+  position: absolute;
+  top: 0.9375rem;
+  right: 2.1875rem;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 300ms;
+}
+.close:hover, .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=style.css.map */
