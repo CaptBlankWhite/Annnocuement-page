@@ -427,7 +427,7 @@
             for (var i = 0; i < extractedImages.length; i++) {
               op += '<div class="media">' +
                 '<img src="' + extractedImages[i] +
-                '" alt="Image from tweet" />' + '</div>';
+                '" loading="lazy" alt="Image from tweet" />' + '</div>';
             }
           }
           if (showImages) {
