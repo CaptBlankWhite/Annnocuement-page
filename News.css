@@ -1,0 +1,71 @@
+.u-section-1 {
+  background-image: url("images/CITEBGHompageHeader-01.png");
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 62px;
+}
+
+.u-section-1 .u-text-1 {
+  font-size: 1.875rem;
+  margin: 7px 670px 23px 0;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 {
+    background-position: 50% 50%;
+  }
+
+  .u-section-1 .u-sheet-1 {
+    min-height: 51px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-right: 470px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 39px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-right: 250px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 29px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-right: 70px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 18px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-right: 0;
+  }
+}.u-section-2 {
+  background-image: none;
+  min-height: 446px;
+}
+
+.u-section-2 .u-custom-html-1 {
+  min-height: 425px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 1199px) {
+  .u-section-2 .u-custom-html-1 {
+    height: auto;
+  }
+}
