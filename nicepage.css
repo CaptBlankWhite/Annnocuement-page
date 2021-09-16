@@ -16963,8 +16963,11 @@ div.u-video,
   position: absolute !important;
   top: 0;
   bottom: 0;
+  opacity: 0.95;
   right: 0;
   left: 0;
+  color: #ffffff;
+  background-color: #983b45;
 }
 .u-offcanvas-unshifted-left .u-body > *,
 .u-offcanvas-unshifted-left.u-body > * {
