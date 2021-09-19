@@ -8373,14 +8373,7 @@ ul.u-text li:last-child {
 }
 img.u-image,
 .u-video-poster {
-/* This Webcite is created by me, Dylan Cuevas, C3A
-+ With the help of my friends, Jacob Acorda And Lance Martija
-+ This project won't be possible without them
-+	
-+ I would also like to thank my girlfriend, Nicole Villamin, 
-+ For all the sleepless nights of debugging and visual checking, 
-+ I love you and thanks for the help, baby.
-+*/
+
   overflow: hidden;
 }
 .u-back-image.u-image-contain,
