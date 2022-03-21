@@ -36916,7 +36916,7 @@ a.u-link.u-text-hover-grey-90:hover {
         {
         margin-top: 20px;
         margin-bottom: 20px;
-        font-size: 0.8125rem;
+        font-size: 1rem;
         line-height: 1.6;
         list-icon-spacing: 0.3;
         list-icon-size: 0.8;
@@ -37078,7 +37078,7 @@ a.u-link.u-text-hover-grey-90:hover {
         .u-image:not(.u-shading) > .u-container-layout > p:not(.u-text-variant),
         p:not(.u-text-variant)
         {
-        color: #ffffff;
+        color: #000000;
         }
         .u-overlap.u-overlap-transparent:not(.u-overlap-contrast) .u-header :not(.u-nav-item) > a,
         .u-gradient > .u-container-layout > a,
