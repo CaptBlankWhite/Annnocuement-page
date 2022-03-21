@@ -1,0 +1,36 @@
+@use '../abstract'as *;
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 0;
+  @include font-face(hindGuntur, rem(14), 400, #242424);
+}
+
+a,
+a:visited,
+a:hover {
+  display: block;
+  text-decoration: none;
+  width: max-content;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
